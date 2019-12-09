@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">    
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Official Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>official quiz </h1>
+    <div class="wrapper">
+        
+        <div class="questions" id="questionBox">
+            
+        </div>
+        <div class="options">
+            <ul id="ul">
+                <li id="op1"  onclick="button(this)"></li>
+                <li id="op2" onclick="button(this)"></li>
+                <li id="op3" onclick="button(this)"></li>
+                <li id="op4" onclick="button(this)"></li>
+            </ul>
+            <div class="score">
+                <div class="next">
+                    <button type="button" onclick="next()" id="button">Next</button>
+                </div>
+                <div class="score">
+                    score : <span id="scoreCard">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>

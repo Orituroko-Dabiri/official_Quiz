@@ -1,0 +1,125 @@
+
+body {
+    background: linear-gradient(rgba(29, 24, 24, 0.863),rgba(27, 25, 25, 0.87)), url(/g3.jpg)no-repeat center center/cover ;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'roboto',sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin: 30px 0px -15px;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    height: 400px;
+    width: 650px;
+    background-color: white;
+    margin: 30px auto;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.wrapper .questions {
+    padding: 15px;
+    background-color: lightslategray;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 20px;
+    float: left;
+    width: 100%;
+}
+
+.wrapper .options{
+    float: left;
+    width: 100%;
+}
+
+.wrapper .options ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wrapper .options ul li {
+    display: inline-block;
+    background-color: deepskyblue;
+    width: 47%;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 25px;
+    color: #ffffff;
+    font-size: 15px;
+    box-shadow: 0px 3px 0px lightgray;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+.wrapper .options ul li:active{
+    box-shadow: 0px 3px 0px transparent;
+}
+
+.wrapper .options ul li.correct {
+    background-color: green;
+    box-shadow: 0px 3px 0px lightgreen;
+}
+
+.wrapper .options ul li.wrong {
+    background-color: red;
+    box-shadow: 0px 3px 0px lightpink;
+}
+
+.wrapper .score {
+    float: left;
+    width: 100%;
+    padding: 25px  0px;
+}
+
+.wrapper .score .next {
+    width: 40%;
+    float: left;
+}
+
+.wrapper .score .next button {
+    padding: 15px 60px;
+    color: white;
+    background-color: teal;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px lightgray;
+    outline: none;
+}
+
+.wrapper .score .next button:active{
+    box-shadow: 0px 3px 0px transparent;
+}
+
+.wrapper .score .score {
+    width: 60%;
+    float: left;
+}
+
+.wrapper .score .score  {
+    font-size: 20px;
+    color: black;
+    line-height: 50%;
+    text-transform: uppercase;
+}
+
+.wrapper .score .score  span {
+    background-color: gray;
+    padding: 5px 20px;
+    border-radius: 8px;
+    color: #ffffff;
+}
